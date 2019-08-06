@@ -21,3 +21,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('users','UserController');
     Route::resource('products','ProductController');
 });
+Route::get('/test',function (){
+    return "hello";
+});
